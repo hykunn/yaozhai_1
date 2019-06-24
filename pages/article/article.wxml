@@ -1,0 +1,51 @@
+<view>
+  <view>
+    <view class='header'>
+      <view>
+        <text>文章</text>
+      </view>
+    </view>
+    <view class='title'>
+      <text>{{title}}</text>
+      <view class='author'>
+        <text>{{author}}</text>
+        <text>{{time}}</text>
+      </view>
+    </view>
+    <view class="content-list" wx:for="{{content}}" wx:key="name">
+      <view wx:if="{{item.c_type == 'text'}}">
+        <text>{{item.data}}</text>
+      </view>
+      <view wx:elif="{{item.c_type == 'image'}}">
+        <image src='{{item.data}}' mode="widthFix" class="content-list-image"></image>
+      </view>
+      <view wx:elif="{{item.c_type == 'video'}}">
+        <video src='{{item.data}}' mode="widthFix">{{item.data}}</video>
+      </view>
+    </view>
+  </view>
+  <view class='header'>
+    <view>
+      <text class="header-text">评论</text>
+      <text class="talk" bindtap="onAddclick">回复</text>
+    </view>
+  </view>
+  <view class="release" hidden="{{!releaseFocus}}">
+    <textarea class="text" placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="false" cursor-spacing="15" auto-height="true" focus="{{releaseFocus}}" placeholder="回复 {{releaseName}}"  bindinput="bindinput"></textarea>
+    <view class="submit">发送</view>
+  </view>
+  <view wx:for ="{{comments}}" wx:for-item="it" wx:for-index="id"> 
+    <view class="comments" bindtap='onAddclick' data-objectname='{{comments[id].comment.c_username}}'>
+      <view class="comments_user">{{comments[id].comment.c_username}}:</view>
+      <view class="comments_content">{{comments[id].comment.c_content}}</view>
+      <view class="time">{{comments[id].comment.c_datetime}}</view>
+    </view>
+    <view wx:for="{{comments[id].replys}}">
+      <view class="object" bindtap='onAddclick' data-objectname='{{item.r_username}}'>
+        <view class="comments_user">{{item.r_username}}>>{{item.r_object_userID}}：</view>
+        <view class="comments_content">{{item.r_content}}</view>
+        <view class="time">{{item.r_datetime}}</view>
+      </view>
+    </view>
+  </view>
+</view>

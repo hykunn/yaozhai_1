@@ -1,0 +1,57 @@
+<view style='background:#ececec'>
+  <view>
+    <swiper indicator-dots="{{true}}" autoplay="true" interval="3000" duration="800">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="contentwhite">
+    <view class='header'>
+      <view>
+        <text>推荐景点</text>
+      </view>
+    </view>
+    <view>
+      <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+        <view class="recommend_hot_box" wx:for="{{sceneList}}">
+          <navigator url="{{item.url}}">
+            <image src="{{item.pic}}" class="recommend_hot_image"></image>
+          </navigator>
+          <text class='detail'>{{item.title}}</text>
+          <text class='detail'>{{item.address}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="contentwhite">
+    <view class='header'>
+      <view>
+        <text>所有景点</text>
+      </view>
+    </view>
+    <view>
+      <view wx:for="{{sceneList}}">
+        <navigator url="{{item.url}}">
+          <view class='list'>
+            <view class="content">
+              <image src='{{item.pic}}' />
+            </view>
+            <view class='article-content'>
+              <text class='title'>{{item.title}}</text>
+              <text class='intro'>介绍：{{item.intro}}</text>
+              <text class='detail'>建议游玩时间：{{item.time}}小时</text>
+              <text class='detail'>地址：{{item.address}}</text>
+            </view>
+          </view>
+
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+
+</view>

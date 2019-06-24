@@ -1,0 +1,137 @@
+.title {
+  margin: 20rpx;
+}
+
+.author {
+  font-size: 25rpx;
+  color: #aaa;
+}
+
+.content-list {
+  width: 94%;
+  margin: 20rpx;
+}
+
+.content-list text {
+  font-size: 30rpx;
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-indent: 2em;
+}
+
+.content-list-image {
+  width: 94%;
+  margin: 20rpx;
+}
+
+.content-list video {
+  width: 94%;
+  margin: 20rpx;
+}
+
+.header {
+  width: 96%;
+  border-left: 5px solid #b59b80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25rpx;
+}
+
+.header view {
+  width: 90%;
+  margin: 10rpx;
+}
+
+.header-text {
+  font-size: 38rpx;
+  color: #494949;
+}
+
+.comments {
+  width: 96%;
+  margin: 20rpx 30rpx;
+}
+
+.object {
+  width: 90%;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.comments_user {
+  margin: 10rpx 0rpx;
+  border-left: 5px solid #b59b80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+.comments_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #494949;
+}
+
+.time {
+  font-size: 10px;
+  color: rgb(121, 121, 121);
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.input_null {
+  color: #c9c9c9;
+}
+
+.release {
+  display: flex;
+  align-items: flex-end; /*底部对齐*/
+  justify-content: space-between; /*两端对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: #ececec;
+  font-size: 28rpx;
+  z-index: 999;
+}
+
+.release .text {
+  width: 604rpx;
+  min-height: 34rpx;
+  max-height: 102rpx; /*最多显示三行*/
+  border-width: 15rpx 20rpx; /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #ececec;
+  line-height: 34rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+
+.release .submit {
+  width: 116rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #b59b80;
+}
+.talk{
+  color:#b59b80;
+  font-size: 30rpx;
+  position: relative; /*启用相对定位*/
+  left:70%; /*相对于自己往右偏离150*/
+}

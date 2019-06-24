@@ -1,0 +1,48 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <image class="next-image" src="../../images/user/next_white_icon.png"></image>
+  </view>
+ 
+  <view class="separate"></view>
+ 
+  <view class="order" catchtap="toOrder">
+    <text class="myorder-text">我的游记</text>
+    <text class="myorderlook-text">查看全部游记</text>
+    <image class="next-image" src="../../images/user/next_gray_icon.png"></image>
+  </view>
+  <view class="line"></view>
+  <view class="news">
+  <image src="../../images/user/camera.png" bindtap='newContent'></image>
+  <text class="news-text">分享你的快乐时光</text>
+  </view>
+  <view class="separate"></view>
+  <view class="person-list">
+    <view class="list-item">
+      <image class="item-image" src="../../images/user/personal_address.png"></image>
+      <text class="item-text">收货地址</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/user/personal_share.png"></image>
+      <text class="item-text">我的游记</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/user/personal_evaluated.png"></image>
+      <text class="item-text">我的评价</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <image class="item-image" src="../../images/user/personal_aboutus.png"></image>
+      <text class="item-text">关于我们</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="person-line"></view>
+  </view>
+</view>

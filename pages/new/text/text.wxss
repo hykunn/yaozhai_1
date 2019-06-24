@@ -1,0 +1,32 @@
+.title{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-content: center;
+}
+.title text{
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  color: #b59b80;
+}
+.title image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 50rpx;
+}
+.input-box{
+  background-color: #fff;
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 5px;
+  background-size: cover;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.input-box textarea{
+  width: 100%;
+  margin-top: 30rpx;
+  font-size: 36rpx;
+}

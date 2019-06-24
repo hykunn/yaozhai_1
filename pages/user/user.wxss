@@ -1,0 +1,119 @@
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #b59b80;
+  width: 100%;
+  height: 250rpx;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  position: relative;
+  width: 60%;
+  margin: 50rpx;
+  color: #fff;
+}
+/* 订单 */
+.order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+}
+.myorder-text {
+  font-size: 30rpx;
+  color: gray;
+  margin: 20rpx;
+  width: 40%;
+}
+.myorderlook-text {
+  font-size: 30rpx;
+  color: gray;
+  position: relative;
+  right: 20rpx;
+  width: 60%;
+  text-align: right;
+}
+.next-image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  right: 10rpx;
+}
+/* .navs {
+  display: flex;
+}
+.nav-item {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.nav-item .nav-image {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 5rpx;
+}
+.nav-item text {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: gray;
+} */
+.news{
+  width: 100%;
+  height:240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.news image{
+  width: 250rpx;
+  height: 160rpx;
+  margin: 40rpx;
+}
+.news-text {
+  position: relative;
+  width: 50%;
+  margin: 50rpx;
+  color: #b59b80;
+}
+/* 列表 */
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+.item-text {
+  color: gray;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+}
+.line {
+  width: 100%;
+  height: 2rpx;
+  background: lightgray;
+}
+.person-line {
+  width: 100%;
+  height: 2rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}

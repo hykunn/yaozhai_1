@@ -1,0 +1,35 @@
+<view>
+  <view>
+    <view class="weui-cells__title">
+      <text class="title-text">文章题目</text>
+      <image src='../../../images/new/save_icon.png' bindtap="onSaveClick" class="save-image"></image>
+    </view>
+    <view class="input-border">
+      <input class="weui-input" style="font-size:35rpx" maxlength="30" placeholder="文章题目不超过三十字" />
+    </view>
+    <view>
+      <view class="content-title">
+        <text class="title-text">文章内容</text>
+      </view>
+    </view>
+  </view>
+  <view class="content-list" wx:for="{{content}}" wx:key="name">
+    <view wx:if="{{item.c_type == 'text'}}">
+      <text>{{item.data}}</text>
+    </view>
+    <view wx:elif="{{item.c_type == 'image'}}">
+      <image src='{{item.data}}' mode="widthFix" class="content-list-image"></image>
+    </view>
+    <view wx:elif="{{item.c_type == 'video'}}">
+      <video src='{{item.data}}' mode="widthFix">{{item.data}}</video>
+    </view>
+    <image src='../../images/new/delete_icon.png' class="delete-image" bindtap='deleteClick'data-index='{{index}}'></image>
+  </view>
+  <view>
+  </view>
+  <view class="content-add-center">
+    <view class="content-add">
+      <image src='../../images/new/add_icon.png' bindtap='onAddclick'></image>
+    </view>
+  </view>
+</view>

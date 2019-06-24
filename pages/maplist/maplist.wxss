@@ -1,0 +1,21 @@
+@import "../../pages/scene/scene.wxss";
+
+
+.content-map {
+  width: 25%;
+  margin: 20rpx;
+  height: 120rpx;
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+}
+
+.content-map image {
+  width: 100%;
+  height: 100%;
+}
+.Click-n{
+  color:#b59b80;
+  font-size: 25rpx;
+  position: relative; /*启用相对定位*/
+}

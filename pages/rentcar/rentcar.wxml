@@ -1,0 +1,26 @@
+<view class="contentwhite">
+  <view class='header'>
+    <view>
+      <text>所有车票</text>
+    </view>
+  </view>
+  <view>
+    <view wx:for="{{rentList}}">
+      <navigator url="{{item.url}}">
+        <view class='list'>
+          <view class="content-map">
+            <image src='{{item.pic}}' />
+          </view>
+          <view class='article-content'>
+            <text class='title'>{{item.title}}</text>
+            <text class='detail'>简介：{{item.intro}}</text>
+            <!-- <text class='detail'>地址：{{item.address}}</text> -->
+          </view>
+          <view class="Click-n">
+            点击购买
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

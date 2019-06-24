@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<button class="container" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<view wx:else class="background">
+
+  <view class="contentwhite">
+    <swiper indicator-dots="{{true}}" autoplay="true" interval="3000" duration="800">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='selection'>
+    <view class="navs">
+      <block wx:for-items="{{indexItems}}" wx:key="name">
+        <view class="nav-item" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+          <navigator url="{{item.url}}">
+            <image src="{{item.imageurl}}" class="nav-image" />
+          </navigator>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="contentwhite">
+    <view class='header'>
+      <view>
+        <text>漫游指南</text>
+      </view>
+    </view>
+    <view>
+      <view wx:for="{{jpitems}}" class='wander'>
+        <view class="content">
+          <image src='../../images/index/swiper_1.jpg' class='article-img-image' />
+        </view>
+        <view class='article-content'>
+          <text class='title'>蝴蝶歌唱响黑山</text>
+          <text class='detail'>蝴蝶歌唱响黑山蝴蝶歌唱响黑山蝴蝶歌唱响黑山蝴蝶歌唱响黑山</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

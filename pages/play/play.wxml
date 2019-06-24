@@ -1,0 +1,16 @@
+<view class="play">
+  <view class="image-text">
+    <image src='../../images/index/swiper_1.jpg'></image>
+    <text class='text1'>游记 | 两篇</text>
+  </view>
+  <view class="content">
+    <view class='card' wx:for="{{cards}}">
+      <image src='{{item.imageurl}}'>
+      </image>
+      <text class='card-title'>{{item.title}}</text>
+      <text class='card-content'>{{item.content}}</text>
+      <text class='card-time'>{{item.cardtime}}</text>
+    </view>
+  </view>
+
+</view>

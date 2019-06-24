@@ -1,0 +1,55 @@
+.view-margin{
+  margin: 20rpx;
+}
+.title-text{
+  font-size: 40rpx;
+  color: #b59b80;
+}
+.input-border{
+   border-bottom: 1px solid #b59b80;
+}
+.save-image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 50rpx;
+}
+.content-add{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 20rpx 10%;
+  height: 60rpx;
+  background: #e4cfb9;
+  border-radius: 5%;
+}
+.content-add image{
+  width:60rpx;
+  height: 100%;
+}
+.content-list{
+  width: 94%;
+  margin: 20rpx;
+  border-bottom: 1px solid #b59b80;
+}
+.content-list text{
+  margin-left: 40rpx;
+  font-size: 35rpx;
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-indent:2em;
+}
+.content-list-image{
+  width: 94%;
+}
+.content-list video{
+  width: 94%;
+}
+.delete-image {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative; /*启用相对定位*/
+  left:90%; /*相对于自己往右偏离150*/
+  bottom: 30rpx; /*相对于自己往下偏离150*/
+}

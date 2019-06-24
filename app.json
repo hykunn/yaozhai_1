@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/new/new",
+    "pages/user/user",
+    "pages/play/play",
+    "pages/shoppingcart/shoppingcart",
+    "pages/orders/orders",
+    "pages/new/text/text",
+    "pages/scene/scene",
+    "pages/article/article",
+    "pages/maplist/maplist",
+    "pages/map/map",
+    "pages/routes/routes",
+    "pages/info/info",
+    "pages/inputtip/inputtip",
+    "pages/tickets/tickets",
+    "pages/rentcar/rentcar",
+    "pages/details/details"
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b59b80",
+    "navigationBarTitleText": "瑶寨生态非遗",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/tabbar/index_icon.png",
+        "selectedIconPath":"images/tabbar/index_select_icon.png"
+      },
+      {
+        "pagePath": "pages/play/play",
+        "text": "游记",
+        "iconPath": "images/tabbar/play_icon.png",
+        "selectedIconPath": "images/tabbar/play_select_icon.png"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "购物车",
+        "iconPath": "images/tabbar/shopping_icon.png",
+        "selectedIconPath": "images/tabbar/shopping_select_icon.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabbar/user_icon.png",
+        "selectedIconPath": "images/tabbar/user_select_icon.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

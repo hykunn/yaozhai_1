@@ -1,0 +1,11 @@
+<view>
+  <view class="title">
+    <text>输入段落</text>
+    <image src='../../../images/new/save_icon.png'  bindtap="saveClick"></image>
+  </view>
+  <view class="input-box" bindtap="bindclick">
+    <form>
+      <textarea bindinput="input" name="name" rows="80" cols="80" value="{{content}}" placeholder="记录美好...." style="font-size:{{fontSize}};color: {{fontColor}}"></textarea>
+    </form>
+  </view>
+</view>
